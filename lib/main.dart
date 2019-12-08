@@ -1,8 +1,8 @@
-import 'package:cloudy24_webview/contact_web.dart';
-import 'package:cloudy24_webview/login_web.dart';
-import 'package:cloudy24_webview/about_web.dart';
-import 'package:cloudy24_webview/progress_hud.dart';
-import 'package:cloudy24_webview/support_web.dart';
+import 'package:flutterapp_webview/contact_web.dart';
+import 'package:flutterapp_webview/login_web.dart';
+import 'package:flutterapp_webview/about_web.dart';
+import 'package:flutterapp_webview/progress_hud.dart';
+import 'package:flutterapp_webview/support_web.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 //import 'package:url_launcher/url_launcher.dart';
@@ -49,24 +49,6 @@ someFunction(){
               )
              ),
            ),
-          /* RaisedButton(
-            elevation: 0,
-            padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 0.0),
-           shape: RoundedRectangleBorder(
-            borderRadius: new BorderRadius.circular(0.0),
-            side: BorderSide(color: Colors.red)),
-            onPressed: (){
-              Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LoginPage()
-              ));
-            },
-            child: Text("Login",style: TextStyle(color: Color.fromARGB(255, 246, 57, 53),fontSize: 18),),
-            //color: Color.fromARGB(255, 246, 57, 53),
-            color: Colors.white,
-            splashColor: Colors.white,
-          ),*/
           Padding(
             padding: const EdgeInsets.all(6.0),
             child: ListTile(
@@ -161,7 +143,7 @@ someFunction(){
             child: Stack(
               children: <Widget>[
                 WebView(
-                  initialUrl:"https://cloudy24.com/",
+                  initialUrl:"add your home url",
                   javascriptMode: JavascriptMode.unrestricted,
                   onPageFinished: pageFinishedLoading,
                   
