@@ -1,4 +1,4 @@
-import 'package:cloudy24_webview/progress_hud.dart';
+import 'package:flutterapp_webview/progress_hud.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -30,7 +30,7 @@ final Function someFunction;
             child: Stack(
               children: <Widget>[
                 WebView(
-                  initialUrl:"https://app.cloudy24.com/clientarea.php",
+                  initialUrl:"add your url",
                   javascriptMode: JavascriptMode.unrestricted,
 
                   onPageFinished: pageFinishedLoading,
