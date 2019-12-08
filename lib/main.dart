@@ -17,23 +17,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp
     (
-      title: "Cloudy 24",
+      title: "FlutterApp WebView",
       color: Color.fromARGB(255, 246, 87, 53),
       darkTheme: ThemeData(
-        brightness: Brightness.dark, 
+        //brightness: Brightness.dark, 
       ),
-      home: Cloudy24Home(),  
+      home: FAWebViewHome(),  
       debugShowCheckedModeBanner: false,
     );
   }
 }
 class Someclass{}
-class Cloudy24Home extends StatefulWidget {
+class FAWebViewHome extends StatefulWidget {
   @override
-  _Cloudy24HomeState createState() => _Cloudy24HomeState();
+  _FAWebViewHomeState createState() => _FAWebViewHomeState();
 }
 
-class _Cloudy24HomeState extends State<Cloudy24Home>{
+class _FAWebViewHomeState extends State<FAWebViewHome>{
 bool _isLoading = true;
 someFunction(){
   return Drawer(
@@ -54,7 +54,7 @@ someFunction(){
             child: ListTile(
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => Cloudy24Home()
+                  builder: (context) => FAWebViewHome()
                 ));
               },
               leading: Icon(Icons.home,size: 44,color: Color.fromARGB(255, 246, 89, 53),),
