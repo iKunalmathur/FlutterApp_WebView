@@ -1,4 +1,4 @@
-import 'package:cloudy24_webview/progress_hud.dart';
+import 'package:flutterapp_webview/progress_hud.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 class AboutPageWeb extends StatefulWidget {
@@ -30,7 +30,7 @@ class _AboutPageWebState extends State<AboutPageWeb> {
                             child: Stack(
                               children: <Widget>[
                                 WebView(
-                                  initialUrl:"https://cloudy24.com/about",
+                                  initialUrl:"add your url",
                                   javascriptMode: JavascriptMode.unrestricted,
                 
                                   onPageFinished: pageFinishedLoading,
